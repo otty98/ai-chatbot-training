@@ -1,4 +1,3 @@
-# AI-Chatbot-Training
 # AI Educational Chatbot
 
 This repository contains the training data and deployment instructions for the AI Educational Chatbot. This chatbot aims to educate users about foundational AI concepts, including machine learning (ML), natural language processing (NLP), large language models (LLMs), neural networks, computer vision, and AI ethics.
@@ -38,6 +37,8 @@ To guide users to deeper knowledge on AI concepts, the chatbot includes the foll
 ## How to Use
 
 To use this chatbot:
+
+https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/14/13/20250514130620-XE6ZNOCX.json
 
 1. Clone this repository to your local machine.
 2. Import the training data into your Botpress instance.
