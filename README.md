@@ -40,9 +40,7 @@ To use this chatbot:
 
 https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/14/13/20250514130620-XE6ZNOCX.json
 
-1. Clone this repository to your local machine.
-2. Import the training data into your Botpress instance.
-3. Deploy the chatbot and share the public link for access.
+* Click on the link above
 
 ## Deployment
 
