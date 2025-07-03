@@ -42,18 +42,6 @@ https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.b
 
 * Click on the link above
 
-## Deployment
-
-1. Set up a Botpress instance (cloud or self-hosted).
-2. Import the training document provided in this repository.
-3. Test the chatbot to ensure it responds accurately to AI-related questions.
-4. Share the deployment link in your GitHub README.
-
-## Next Steps
-
-* Add more multimedia elements like diagrams or images for a richer learning experience.
-* Implement a 'further learning' feature to guide users to recommended course modules.
-* Include cross-linking between related concepts for deeper exploration.
 
 ## References
 
@@ -62,7 +50,4 @@ https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.b
 * Introduction to Generative AI (Google Cloud)
 * AI Essentials (Intel)
 
-## License
-
-This project is licensed under the MIT License.
 
