@@ -216,8 +216,6 @@ class AIEducationChatbot:
         system_prompt = self.build_system_prompt(conversation_context)
         
         try:
-    # The Gemini API does not use a separate system prompt role in the same way.
-    # We will combine it with the user message for a single-turn conversation.
             model = genai.GenerativeModel('gemini-1.5-pro')
 
             response = model.generate_content(f"{system_prompt}\n\nUser: {user_message}",
@@ -236,6 +234,7 @@ class AIEducationChatbot:
             return enhanced_response
 
         except Exception as e:
+            print(f"An error occurred with the Gemini API call: {e}")
             return {
                 "response": "I apologize, but I'm having trouble processing your question right now. Could you try rephrasing it, or ask me about a specific AI topic like machine learning, neural networks, or AI ethics?",
                 "type": "fallback",

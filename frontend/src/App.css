@@ -18,8 +18,28 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-image: url('/images/gemini-background.png');
+  background-size: cover; /* This makes the image cover the entire container */
+  background-position: center; /* This centers the image in the container */
+  background-repeat: no-repeat;
+  position: relative;
   overflow: hidden;
+}
+
+.chat-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% transparency */
+  z-index: 1; /* Place the overlay behind the messages */
+}
+
+.messages-box, .input-box {
+  position: relative; /* Ensure these are above the overlay */
+  z-index: 2;
 }
 
 .messages-box {
