@@ -1,73 +1,52 @@
-AI Education Chatbot
-This project is a full-stack, AI-powered educational chatbot designed to help users learn about Artificial Intelligence and related topics. The chatbot provides clear explanations, suggests related concepts, and offers personalized learning paths.
+# AI Education Chatbot
 
-🤖 Features
-Context-Aware Responses: The chatbot uses a knowledge base and a Generative AI model to provide relevant and helpful answers to user queries.
+A full-stack chatbot that helps people learn about AI. It explains concepts clearly, points out related topics worth exploring, and adapts to what each user already knows.
 
-Structured Conversation Flows: Users can follow predefined learning paths on topics like AI fundamentals, NLP, and AI ethics.
+## 🤖 Features
 
-User Progress Tracking: The system can save conversation history and track user progress to offer personalized recommendations.
+- **Context-aware answers** — combines a knowledge base with a generative AI model to give relevant, helpful responses
+- **Guided learning paths** — structured flows for topics like AI fundamentals, NLP, and AI ethics
+- **Progress tracking** — saves conversation history and tailors recommendations based on where each user is at
+- **Clean UI** — built with React, responsive and easy to use
 
-Modern UI: A clean and responsive user interface built with React.
+## 💻 Tech stack
 
-💻 Technologies
-Frontend:
+**Frontend:** React, Vite, CSS
 
-React: The main JavaScript library for building the user interface.
+**Backend:** Flask, Python, Flask-CORS, `google-generativeai`, `pymongo`
 
-Vite: A fast build tool for the frontend development server.
+**Database:** MongoDB — stores conversations, the knowledge base, and user progress
 
-CSS: For styling the application.
+## Getting started
 
-Backend:
+### 1. Backend setup
 
-Flask: A lightweight Python web framework to handle API requests.
-
-Python: The core programming language for the backend logic.
-
-Flask-CORS: Manages Cross-Origin Resource Sharing for communication between the frontend and backend.
-
-google-generativeai: The library used to interact with the Generative AI model.
-
-pymongo: The Python driver for MongoDB, used for database interactions.
-
-MongoDB: The NoSQL database used to store conversations, a knowledge base, and user progress
-
-Bash
-
+```bash
 cd backend
-Install the required Python packages using pip.
-
-Bash
-
 pip install -r requirements.txt
-Set up your environment variables. Create a .env file and add your MongoDB connection string and Gemini API key.
+```
 
-Bash
+Create a `.env` file in the backend directory with your MongoDB connection string and Gemini API key:
 
+```
 MONGODB_URI='mongodb://localhost:27017/'
 GEMINI_API_KEY='YOUR_GEMINI_API_KEY'
-Run the Flask development server.
+```
 
-Bash
+Start the server:
 
+```bash
 python app.py
-The server will start on http://127.0.0.1:5000.
+```
 
-2. Frontend Setup
-Navigate to the frontend directory.
+It'll run at `http://127.0.0.1:5000`.
 
-Bash
+### 2. Frontend setup
 
+```bash
 cd frontend
-Install the Node.js dependencies.
-
-Bash
-
 npm install
-Start the Vite development server.
-
-Bash
-
 npm run dev
-The frontend will be available at http://localhost:5173. The application will automatically connect to the backend running on port 5000.
+```
+
+The app will be available at `http://localhost:5173` and will connect to the backend automatically.
